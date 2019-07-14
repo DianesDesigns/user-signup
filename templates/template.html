@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            form{
+                background-color: #eee;
+                padding: 20px;
+                margin: 0 auto;
+                width: 540px;
+                font: 16px sans-serif;
+                border-radius: 10px;
+            }
+            textarea {
+                margin: 10px 0;
+                width: 540px;
+                height: 120px;           
+            }
+        </style>
+    </head>
+    <body>
+        <form action="/invalid" method="post">
+        <h1>Signup</h1>
+            <label for="Username">Username</label>
+                <input id="" type=text name="Username" /> 
+                <span class="error">{{Username}}</span>
+            <br>
+                <span class="error">{{usererror}}</span>
+
+            <br>
+            <label for="Password">Password</label>
+                <input id="" type=password name="Password" /> 
+                <span class="error">{{passerror}}</span>
+            <br>
+            <label for="VerifyPassword">Verify Password</label>
+                <input id="" type=password name="VerifyPassword" /> 
+                <span class="error">{{verifypasserror}}</span>
+            <br>
+            <label for="Email(optional)">Email(optional)</label>
+                <input id="" type=text name="Email" /> 
+                <span class="error">{{EmailError}}</span>
+            <br>
+            <input type="submit" name="submit button" value="Submit"></input>
+        </form>
+        </body>
+</html> 
